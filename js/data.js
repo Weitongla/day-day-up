@@ -82,4 +82,3 @@ self.addEventListener('fetch', (event) => {
 
   // For everything else: network only (no special handling needed)
 });
-

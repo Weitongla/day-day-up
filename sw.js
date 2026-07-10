@@ -3,7 +3,7 @@
  * Cache-first strategy for static assets, network-first for data
  */
 
-const CACHE_NAME = 'evocab-v1';
+const CACHE_NAME = 'evocab-v2';
 const STATIC_ASSETS = [
   '.',
   'index.html',

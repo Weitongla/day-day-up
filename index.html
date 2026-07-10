@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#6C5CE7">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Visual Vocab">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>English Visual Vocabulary - 英语视觉词汇</title>
+  <meta name="description" content="DK-style English vocabulary learning app. 10 scenarios, 275 words with audio.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+  <link rel="apple-touch-icon" href="icons/icon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="app-header">
+    <div class="header-inner">
+      <!-- Logo -->
+      <div class="app-logo" title="返回首页">
+        <span class="logo-icon">📖</span>
+        <span class="logo-text">Visual Vocab</span>
+        <span class="logo-sub">英语视觉词汇</span>
+      </div>
+
+      <!-- Search -->
+      <div class="search-wrapper">
+        <span class="search-icon">🔍</span>
+        <input
+          type="text"
+          class="search-input"
+          placeholder="搜索单词、中文或场景..."
+          aria-label="搜索词汇"
+          autocomplete="off"
+        >
+      </div>
+
+      <!-- Actions -->
+      <div class="header-actions">
+        <button class="header-btn fav-btn" aria-label="收藏夹">
+          💝
+          <span class="badge">0</span>
+        </button>
+        <button class="theme-toggle" aria-label="切换主题">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <main class="app-main">
+
+    <!-- Page: Home -->
+    <section id="page-home" class="page active">
+      <!-- Rendered by app.js -->
+    </section>
+
+    <!-- Page: Category Detail -->
+    <section id="page-category" class="page">
+      <!-- Rendered by app.js -->
+    </section>
+
+    <!-- Page: Search Results -->
+    <section id="page-search" class="page">
+      <!-- Rendered by app.js -->
+    </section>
+
+    <!-- Page: Favorites -->
+    <section id="page-favorites" class="page">
+      <!-- Rendered by app.js -->
+    </section>
+
+  </main>
+
+  <!-- ============ SCRIPTS ============ -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Service Worker Registration for PWA -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').then((reg) => {
+          console.log('📖 PWA: Service Worker registered! Scope:', reg.scope);
+        }).catch((err) => {
+          console.warn('📖 PWA: Service Worker registration failed:', err);
+        });
+      });
+    }
+  </script>
+
+</body>
+</html>

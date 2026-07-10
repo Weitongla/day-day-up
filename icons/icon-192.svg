@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6C5CE7"/>
+      <stop offset="100%" stop-color="#a29bfe"/>
+    </linearGradient>
+  </defs>
+  <rect width="192" height="192" rx="36" fill="url(#bg)"/>
+  <g transform="translate(96, 96)">
+    <path d="M-52-30 Q-52-45 -38-45 L38-45 Q52-45 52-30 L52 30 Q52 45 38 45 L-38 45 Q-52 45 -52 30 Z" fill="white" opacity="0.95"/>
+    <rect x="-3" y="-45" width="6" height="90" rx="1" fill="#6C5CE7"/>
+    <line x1="-38" y1="-22" x2="-8" y2="-22" stroke="#ddd" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-38" y1="-8" x2="-8" y2="-8" stroke="#ddd" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-38" y1="8" x2="-8" y2="8" stroke="#ddd" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="8" y1="-22" x2="38" y2="-22" stroke="#eee" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="8" y1="-8" x2="38" y2="-8" stroke="#eee" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M-4-45 L-4-56 L0-51 L4-56 L4-45" fill="#FF6B6B"/>
+  </g>
+</svg>
